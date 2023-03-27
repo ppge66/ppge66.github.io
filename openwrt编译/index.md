@@ -3,7 +3,7 @@
 <!--
  * @Author: huzi
  * @Date: 2023-03-26 22:51:40
- * @LastEditTime: 2023-03-27 13:30:22
+ * @LastEditTime: 2023-03-27 20:02:52
  * @FilePath: /blog/content/posts/openwrt编译.md
  * @Description:
 -->
@@ -39,14 +39,20 @@ su openwrt
 
 ### 添加自定义源
 
-```
+```bash
 cat >> feeds.conf.default <<EOF
 src-git kenzo https://github.com/kenzok8/openwrt-packages
 src-git small https://github.com/kenzok8/small
+src-git OpenClash https://github.com/vernesong/OpenClash.git
 EOF
+```
+
 或
+
+```
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+sed -i '$a src-git OpenClash https://github.com/vernesong/OpenClash.git' feeds.conf.default
 ```
 
 ### 配置环境环境 .config
@@ -86,7 +92,7 @@ Utilities  --->实用程序
 Xorg  --->Xorg
 ```
 
-```
+```bash
 ## 选择系统(以 x86_64 为例)
 Target System -> x86
 Subtarget -> x86_64
@@ -164,26 +170,6 @@ make -j$(($(nproc) + 1)) V=s
 
 ```bash
 vim package/base-files/files/bin/config_generate
-```
-
-### 单独编译插件
-
-```bash
-## 下载OpenClash
-wget https://github.com/vernesong/OpenClash/archive/master.zip
-
-## 解压
-unzip master.zip
-
-## 复制OpenClash软件包到OpenWrt
-cp -r OpenClash-master/luci-app-openclash openwrt/package
-
-./scripts/feeds update -a
-./scripts/feeds install -a
-
-
-## 删除旧的openclash文件
-rm -rf master.zip && rm -rf OpenClash-master && rm -rf openwrt/package/luci-app-openclash
 ```
 
 ## pve 导入镜像

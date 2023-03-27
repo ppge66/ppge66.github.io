@@ -3,8 +3,8 @@
 <!--
  * @Author: huzi
  * @Date: 2023-03-26 22:51:40
- * @LastEditTime: 2023-03-27 00:42:09
- * @FilePath: /hugo/blog/content/posts/first_post.md
+ * @LastEditTime: 2023-03-27 12:07:15
+ * @FilePath: /blog/content/posts/openwrt编译.md
  * @Description:
 -->
 <!-- ---

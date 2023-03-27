@@ -3,7 +3,7 @@
 <!--
  * @Author: huzi
  * @Date: 2023-03-26 22:51:40
- * @LastEditTime: 2023-03-27 20:02:52
+ * @LastEditTime: 2023-03-28 00:10:52
  * @FilePath: /blog/content/posts/openwrt编译.md
  * @Description:
 -->
@@ -33,10 +33,6 @@ usermod -a -G sudo openwrt
 su openwrt
 ```
 
-```
-./scripts/feeds update -a && ./scripts/feeds install -a
-```
-
 ### 添加自定义源
 
 ```bash
@@ -53,6 +49,12 @@ EOF
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 sed -i '$a src-git OpenClash https://github.com/vernesong/OpenClash.git' feeds.conf.default
+```
+
+### 更新源/安装源
+
+```
+./scripts/feeds update -a && ./scripts/feeds install -a
 ```
 
 ### 配置环境环境 .config

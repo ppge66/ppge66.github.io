@@ -3,7 +3,7 @@
 <!--
  * @Author: huzi
  * @Date: 2023-04-05 17:42:49
- * @LastEditTime: 2023-04-05 18:06:56
+ * @LastEditTime: 2023-04-05 18:32:26
  * @FilePath: /blog/content/posts/google-one.md
  * @Description:
 -->
@@ -15,7 +15,7 @@ draft: true
 
 # google one 连接记录
 
-## openclash 设置 fa
+## openclash 设置
 
 ### 插件设置
 

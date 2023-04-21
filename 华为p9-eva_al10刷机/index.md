@@ -3,7 +3,7 @@
 <!--
  * @Author: huzi
  * @Date: 2023-04-20 17:45:02
- * @LastEditTime: 2023-04-20 18:11:58
+ * @LastEditTime: 2023-04-21 18:13:44
  * @FilePath: /blog/content/posts/华为P9-EVA_AL10刷机.md
  * @Description:
 -->
@@ -73,6 +73,12 @@ https://www.huaweirom.com
 https://www.rom100.com
 https://firmwarefile.com/huawei-p9-eva-al10
 https://androidmtk.com/download-huawei-stock-rom-for-all-models
+
+
+# 升级降级
+https://github.com/ProfessorJTJ/HISuite-Proxy
+# 固件搜索
+https://professorjtj.github.io
 ```
 
 ## magisk

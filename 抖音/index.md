@@ -3,8 +3,8 @@
 <!--
  * @Author: huzi
  * @Date: 2023-03-26 22:51:40
- * @LastEditTime: 2023-05-05 15:45:16
- * @FilePath: \blogsrc\content\posts\抖音.md
+ * @LastEditTime: 2023-05-05 23:41:11
+ * @FilePath: /blog/content/posts/抖音.md
  * @Description:
 -->
 <!-- ---
@@ -20,6 +20,7 @@ draft: true
     - [1.3 安装证书](#13-安装证书)
   - [2 开始抓包](#2-开始抓包)
   - [3 完毕](#3-完毕)
+  - [4 抓完包后续](#4-抓完包后续)
 
 # 远程抓包教程
 
@@ -54,14 +55,16 @@ http://mitm.it
 如下图：（ps:如不是和下图一样，请检查上一步中的代理设置是否正确）
 ![](https://ghproxy.com/https://raw.githubusercontent.com/ppge66/blogpic/main/pic/1683253539294.jpg)
 
-点击 Get mitmproxy-ca-cert.cer 下载证书
+点击 Get mitmproxy-ca-cert.cer 下载证书 (注意保存时的文件名，下面搜索可能需要用)
 
 下载后打开手机---设置---进入设置页面找到安全与隐私项打开--进入页面下拉到地步找到更多安全设置，点击进入---点击从 sd 卡安装---进入设备文件页面找到你下载的文件安装即可
 
 ![](https://ghproxy.com/https://raw.githubusercontent.com/ppge66/blogpic/main/pic/20230505103401.png)
 ![](https://ghproxy.com/https://raw.githubusercontent.com/ppge66/blogpic/main/pic/20230505103423.png)
 ![](https://ghproxy.com/https://raw.githubusercontent.com/ppge66/blogpic/main/pic/20230505103449.png)
-![](https://ghproxy.com/https://raw.githubusercontent.com/ppge66/blogpic/main/pic/20230505103508.png)
+![](https://ghproxy.com/https://raw.githubusercontent.com/ppge66/blogpic/main/pic/20230505233540.png)
+
+ps:找不到看最后一张图，切换到这个选项，搜索：mitmproxy 或上面保存时的文件名
 
 还是不会的参考：[证书安装](https://jingyan.baidu.com/article/ad310e800d47361849f49efd.html)
 
@@ -70,4 +73,10 @@ http://mitm.it
 打开抖音急速版--左边红包金币处--点开宝箱
 
 ## 3 完毕
+
+## 4 抓完包后续
+
+![](https://ghproxy.com/https://raw.githubusercontent.com/ppge66/blogpic/main/pic/20230505102030.png)
+将上面手机代理的一步，代理设置成无，不然你手机后面是上不了网的。
+如果你想抓其它帐号，找到 手机设置 --- 应用管理--- 找到抖音极速版 -- 清除数据 即可
 

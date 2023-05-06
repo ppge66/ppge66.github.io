@@ -3,7 +3,7 @@
 <!--
  * @Author: huzi
  * @Date: 2023-03-26 22:51:40
- * @LastEditTime: 2023-05-05 23:41:11
+ * @LastEditTime: 2023-05-06 19:20:10
  * @FilePath: /blog/content/posts/抖音.md
  * @Description:
 -->
@@ -28,6 +28,7 @@ draft: true
 
 ### 1.1 下载软件包
 
+<font color='red'>必须！！！</font>
 [点击下载](https://wwvs.lanzoub.com/iD8uk0upl58f)
 
 ### 1.2 手机设置
@@ -50,7 +51,10 @@ ps:“服务器主机名”和“服务器端口”找我拿
 ### 1.3 安装证书
 
 复制下列网址用默认浏览器打开或在默认浏览器中手动输入：
-http://mitm.it
+
+```bash
+mitm.it
+```
 
 如下图：（ps:如不是和下图一样，请检查上一步中的代理设置是否正确）
 ![](https://ghproxy.com/https://raw.githubusercontent.com/ppge66/blogpic/main/pic/1683253539294.jpg)
@@ -77,6 +81,6 @@ ps:找不到看最后一张图，切换到这个选项，搜索：mitmproxy 或�
 ## 4 抓完包后续
 
 ![](https://ghproxy.com/https://raw.githubusercontent.com/ppge66/blogpic/main/pic/20230505102030.png)
-将上面手机代理的一步，代理设置成无，不然你手机后面是上不了网的。
+将上面手机代理的一步，<font color='red'>代理设置成无</font>，不然你手机后面是上不了网的。
 如果你想抓其它帐号，找到 手机设置 --- 应用管理--- 找到抖音极速版 -- 清除数据 即可
 
